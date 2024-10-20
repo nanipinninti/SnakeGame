@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SnakeGame</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="header">
         <h1>Snake Game</h1>
         <h1>Score : <span id="score">0</span></h1>
-        <h1>Top : <span id="highestScoreValue">0</span></h1> <!-- Added Highest Score Display -->
+        <h1>Top : <span id="top-score">0</span></h1> 
     </div>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <canvas id="play-board" width="400" height="400"></canvas>
     <div id="gameOverScreen" class="overlay">
         <div class="gameOverContent">
             <h1>Game Over</h1>
@@ -20,6 +20,7 @@
             <button id="restartButton">Restart Game</button>
         </div>
     </div>
-    <script src="script.js"></script>
+</div>
+    <script src="index.js"></script>
 </body>
 </html>
